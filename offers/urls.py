@@ -13,5 +13,10 @@ urlpatterns = [
      # Raw Materials
     path("raw-materials/", views.raw_material_list, name="raw_material_list"),
     path("raw-materials/new/", views.raw_material_create, name="raw_material_create"),
+
+    # Offers
+    path("", views.offer_list, name="offer_list"),
+    path("offers/new/", views.offer_create, name="offer_create"),
+    path("offers/<int:pk>/", views.offer_detail, name="offer_detail")
 ]
 
